@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patas Amigas | Adoção de animais</title>
+  <link rel="stylesheet" href="PatasAmigas.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="logo" href="#topo" aria-label="Patas Amigas — início">Patas <span>Amigas</span></a>
+      <nav aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#animais">Animais</a></li>
+          <li><a href="#adotar">Como adotar</a></li>
+          <li><a href="#visitas">Visitas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="topo">
+    <section class="historia">
+      <div class="container historia-conteudo">
+        <h1>Dá uma casa a quem só precisa de carinho</h1>
+        <p>Somos uma associação do Porto que acolhe cães, gatos e coelhos à<br class="desktop-break"> espera de uma família.</p>
+        <a class="button" href="#animais">Conhecer os animais</a>
+      </div>
+    </section>
+
+    <div class="container page-content">
+      <section id="animais" class="section animals-section">
+        <h2>Animais para adoção</h2>
+        <div class="animal-list">
+          <article class="animal-card rex-card">
+            <span class="badge">Novo</span>
+            <img src="imagens\cao (1).svg" alt="Ilustração de um cão castanho">
+            <h3>Rex</h3>
+            <p>Cão, 3 anos. Adora passear e brincar com a bola.</p>
+          </article>
+          <article class="animal-card">
+            <img src="imagens\gato (1).svg" alt="Ilustração de um gato cinzento">
+            <h3>Mia</h3>
+            <p>Gata, 2 anos. Tranquila, gosta de dormir ao sol.</p>
+          </article>
+          <article class="animal-card">
+            <img src="imagens\coelho (1).svg" alt="Ilustração de um coelho branco">
+            <h3>Tambor</h3>
+            <p>Coelho, 1 ano. Curioso e muito meigo.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="adotar" class="section adoption-section">
+        <h2>Como adotar</h2>
+        <ol>
+          <li>Escolhe o animal que mais combina contigo.</li>
+          <li>Preenche o formulário de contacto.</li>
+          <li>Visita-nos para o conheceres pessoalmente.</li>
+          <li>Leva o teu novo amigo para casa.</li>
+        </ol>
+      </section>
+
+      <section id="visitas" class="section visits-section">
+        <h2>Horário de visitas</h2>
+        <table>
+          <thead><tr><th scope="col">Dia</th><th scope="col">Horário</th></tr></thead>
+          <tbody>
+            <tr><td>Segunda a sexta</td><td>14h00 às 18h00</td></tr>
+            <tr><td>Sábado</td><td>10h00 às 13h00</td></tr>
+            <tr><td>Domingo</td><td>Encerrado</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="contacto" class="section contact-section">
+        <h2>Contacto</h2>
+        <form class="contact-form">
+          <div class="form-field">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-field">
+            <label for="animal">Animal</label>
+            <select id="animal" name="animal">
+              <option value="rex">Rex</option>
+              <option value="mia">Mia</option>
+              <option value="tambor">Tambor</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+          </div>
+          <button class="button" type="submit">Enviar</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Patas Amigas. Rua das Flores, 123, Porto.</p>
+  </footer>
+</body>
+</html>

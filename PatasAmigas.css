@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f7f7f9;
+  color: #1d1148;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  width: min(1000px);
+  margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
+
+}
+
+.site-header {
+  background: #fff;
+  max-height: 40px;
+}
+
+.header-content {
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 0, 0;
+}
+
+.logo {
+  color: #1d1148;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.logo span {
+  color: #e40084;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-list a {
+  color: #1d1148;
+  text-decoration: none;
+}
+
+.nav-list a:hover,
+.nav-list a:focus-visible {
+  color: #b8006a;
+}
+
+.historia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  background: #1d1148;
+  color: #fff;
+  text-align: center;
+}
+
+.historia-content {
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.historia h1 {
+  text-align: center;
+  justify-content: center;
+  margin: 0 0 12px;
+  font-size: 38px;
+  line-height: 1.3;
+}
+
+.historia p {
+  text-align: center;
+  margin: 0 auto 32px;
+  font-size: 18px;
+}
+
+.button {
+  display: inline-block;
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 26px;
+  background: #e40084;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus-visible {
+  background: #b8006a;
+}
+
+.page-content {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  margin: 0 0 18px;
+  font-size: 26px;
+  line-height: 1.4;
+}
+
+.animal-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.animal-card {
+  box-sizing: border-box;
+  position: relative;
+  width: 300px;
+  padding: 16px;
+  border: 3px solid #1d1148;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 5px 12px rgba(29, 17, 72, 0.14);
+  text-align: center;
+}
+
+.animal-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.animal-card h3 {
+  margin: 10px 0 6px;
+  font-size: 23px;
+}
+
+.animal-card p {
+  margin: 0;
+}
+
+.badge {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border-radius: 999px;
+  padding: 4px 12px;
+  background: #e40084;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.adoption-section ol {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.adoption-section li + li {
+  margin-top: 8px;
+}
+
+.visits-section table {
+  width: 100%;
+  max-width: 500px;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.visits-section th,
+.visits-section td {
+  border: 1px solid #d6d5df;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.visits-section th {
+  background: #1d1148;
+  color: #fff;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 484px;
+  padding: 22px 24px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 5px 12px rgba(29, 17, 72, 0.1);
+}
+
+.form-field {
+  margin-bottom: 14px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  display: block;
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid #c8c7d1;
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: #1d1148;
+  font: inherit;
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
+.site-footer {
+  padding: 20px 16px;
+  background: #1d1148;
+  color: #fff;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .header-content {
+    justify-content: center;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .nav-list {
+    justify-content: center;
+    gap: 8px 18px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+}
+
+
+
+
+
